@@ -1,2 +1,2 @@
-# How to Build an Interactive SWMM Web App
+# interactive-swmm-tutorial
 A step-by-step tutorial to make your own interactive SWMM web app
