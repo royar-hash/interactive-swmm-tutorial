@@ -232,7 +232,7 @@ Here's what the code snippets for a controllable asset look like.
 ```
   
 Here's a visual of what the basic architecture looks like for passing data from the user interface to Python. 
-<img src="static/images/ui_to_python.jpg">
+<img src="static/images/ui_to_python_updated.jpg">
 
 
 # Step Four: Passing Data from Python to the User Interface
