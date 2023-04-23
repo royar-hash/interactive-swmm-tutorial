@@ -92,7 +92,7 @@ Here's what the example app looks like. Click <a href='https://interactive-swmm.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Built With
-* <a href="https://docs.mapbox.com/mapbox-gl-js/guides/">Mapbox GL JS>/a>
+* <a href="https://docs.mapbox.com/mapbox-gl-js/guides/">Mapbox GL JS</a>
 * <a href="https://flask-socketio.readthedocs.io/en/latest/">Flask-SocketIO</a>
 * <a href="https://www.pyswmm.org/">pyswmm</a>
 
