@@ -178,7 +178,7 @@ The list of packages above is just a start. You may need to install other packag
 # Step Three: Passing Data from the User Interface to Python
 For our example app, we have a start button and two sliders on the user interface: one for each orifice in the SWMM model. Our goal is to achieve the following: 
 * When the start button is pressed, the PySWMM simulation starts to run
-* When the user changes the slider, the new value of the slider is set as the target setting of the corresponding controllable asset. For example, if the user moves the slider all the way down to 0, we want to set the target setting of ORI-11 in the SWMM model to 0 as well. 
+* When the user changes the slider, the new value of the slider is set as the target setting of the corresponding controllable asset. For example, if the user moves the gate 1 slider all the way down to 0, we want to set the target setting of ORI-11 in the SWMM model to 0 as well. 
 
 The basic idea for the start button is as follows:
 * Create a button in HTML. 
