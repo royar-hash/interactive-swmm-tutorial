@@ -35,7 +35,7 @@
     <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://interactive-swmm.herokuapp.com/">View Demo</a>
+    <a href="https://interactive-swmm.herokuapp.com/" target='_blank">View Demo</a>
     ·
     <a href="https://github.com/github_username/repo_name/issues">Report Bug</a>
     ·
