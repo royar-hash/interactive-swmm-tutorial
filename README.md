@@ -84,7 +84,7 @@ This flexible, adaptable web app architecture combines the modeling power of SWM
 This project is a product of Professor Branko Kerkez's <a href='http://www-personal.umich.edu/~bkerkez/'>Digital Water Lab</a> at the University of Michigan. <br>
 
 Here's what the example app looks like. Click <a href='https://interactive-swmm.herokuapp.com/'>here</a> to see and interact with the finished product.<br>
-<img src="static/images/example_app.jpg" alt="App" height="400">
+<img src="static/images/example_app.jpg" alt="App" height="450">
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
