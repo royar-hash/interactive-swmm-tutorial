@@ -122,7 +122,7 @@ This project is a product of Professor Branko Kerkez's <a href='http://www-perso
 ```
 4. If you don't have a free Mapbox account, now is the time to make one! Click <a href='https://account.mapbox.com/auth/signup/'>here</a> for instructions on creating your account. Once you've made your free account, click on 'Create a token' on your dashboard and make a secret token with tilesets:write, tilesets:read, and tilesets:list permissions. Make sure to save your secret token somewhere you won't lose it! You'll need it in the next step.
 
-5. Take your GeoJSON file or files and upload to Mapbox as tilesets using the <a href="https://docs.mapbox.com/help/tutorials/get-started-mts-and-tilesets-cli/">Mapbox Tilesets CLI</a>. You have to use the method linked; just doing uploading stuff in Mapbox Studio won't work for our purposes. Once your tileset is published, you can look at it in Studio to make sure they look okay. Here's an example recipe used to upload the example GeoJSON.
+5. Take your GeoJSON file or files and upload to Mapbox as tilesets using the <a href="https://docs.mapbox.com/help/tutorials/get-started-mts-and-tilesets-cli/">Mapbox Tilesets CLI</a>. You have to use the method linked; just doing uploading stuff in Mapbox Studio won't work for our purposes. Here's an example recipe used to upload the example GeoJSON.
 
 <h5 a><strong><code>recipe.json</code></strong></h5>
 
