@@ -56,7 +56,7 @@
       </ul>
     </li>
     <li>
-      <a href="#getting-started">Getting Started</a>
+      <a href="#getting-started">Step One: Preparing Your Geospatial Data</a>
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installation">Installation</a></li>
@@ -77,7 +77,7 @@
 # About The Project
 This tutorial will walk you through the basic architecture of building an interactive SWMM web app using Flask-SocketIO and Mapbox GL JS.
 
-Click <a href='https://interactive-swmm.herokuapp.com/'>here</a> to see a slightly more sophisticated version of the example app used throughout this tutorial. 
+Click <a href='https://interactive-swmm.herokuapp.com/'>here</a> to see a finished version of the example app used throughout this tutorial. 
 
 Normally, running a SWMM simulation is pretty boring. You set a control strategy, hit start, and then you pretty much can't see or do anything until the simulation is done running. 
 
