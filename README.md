@@ -284,7 +284,7 @@ This is not an exhaustive tutorial and is only meant to illustrate the general p
 
 
 <!-- USAGE EXAMPLES -->
-## Usage
+## Ideas
 
 * Dynamic visualizations
 
