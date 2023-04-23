@@ -32,14 +32,14 @@
 
   <p align="center">
     <br />
-    <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/royar-hash/interactive-swmm-tutorial"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     <a href="https://interactive-swmm.herokuapp.com/" target="_blank">View Demo</a>
     ·
-    <a href="https://github.com/github_username/repo_name/issues">Report Bug</a>
+    <a href="https://github.com/royar-hash/interactive-swmm-tutorial/issues">Report Bug</a>
     ·
-    <a href="https://github.com/github_username/repo_name/issues">Request Feature</a>
+    <a href="https://github.com/royar-hash/interactive-swmm-tutorial/issues">Request Feature</a>
   </p>
 </div>
 
@@ -55,17 +55,18 @@
         <li><a href="#built-with">Built With</a></li>
       </ul>
     </li>
-    <li>
-      <a href="#getting-started">Step One: Preparing Your Geospatial Data</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
+    <li><a href="#getting-started">Step One: Preparing Your Geospatial Data</a></li>
+    <li><a href="#usage">Step Two: Set up Your App</a></li>
+    <li><a href="#roadmap">Step Three: Passing Data from the UI to Python</a></li>
+    <li><a href="#contributing">Step Four: Passing Data from Python to the UI</a></li>
+          <ul>
+              <li><a href="#built-with">Update Text</a></li>
+              <li><a href="#built-with">Update a Chart</a></li>
+              <li><a href="#built-with">Update a Map</a></li>
+          </ul> 
+    <li><a href="#license">Step Five: Run Your App</a></li>
+    <li><a href="#license">Step Six: Iterate!</a></li>
+    <li><a href="#license">Ideas</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
@@ -91,9 +92,9 @@ Here's what the example app looks like. Click <a href='https://interactive-swmm.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Built With
-* Mapbox GL JS
-* Flask-SocketIO
-* pyswmm
+* <a href="https://docs.mapbox.com/mapbox-gl-js/guides/">Mapbox GL JS>/a>
+* <a href="https://flask-socketio.readthedocs.io/en/latest/">Flask-SocketIO</a>
+* <a href="https://www.pyswmm.org/">pyswmm</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -107,7 +108,7 @@ Here's what the example app looks like. Click <a href='https://interactive-swmm.
 2. Decide what assets from your SWMM model you want to be able to dynamically visualize (the things you want to change color or size as the simulation is running). In this case, we want to be able to see the flow in the four links. The link names and IDs are shown below.<br>
 <img src="static/images/swmm_model_markup.jpg"  height="300">
 
-3. Export the assets you picked as GeoJSON files. In PCSWMM, you can do this via the 'Export' button. If you want, you can modify the file with the Python package geopandas or another tool - since the GeoJSON from SWMM will probably have lots of information you don't need, this can be helpful to simplify things. Here's what the GeoJSON looks like for the links in our example model. Each asset you want to visualize MUST have a unique numeric id. 
+3. Export the assets you picked as GeoJSON files. In PCSWMM, you can do this via the 'Export' button. If you want, you can modify the file with the Python package geopandas or another tool - since the GeoJSON from SWMM will probably have lots of information you don't need, this can be helpful to simplify things. Each asset you want to visualize MUST have a unique numeric id. Here's what the GeoJSON looks like for the links in our example model.
 
 <h5 a><strong><code>links.geojson</code></strong></h5>
 
@@ -193,14 +194,14 @@ The basic idea for a controllable asset is this:
 
 Note that you could adapt this to pass anything from the user interface back to Python; the same principle will work if you have an off/on switch on the UI that you want to turn a pump on or off in PySWMM, for example. 
 
-Here's what the basic architecture looks like for passing data from the user interface to Python. 
+Here's a visual of what the basic architecture looks like for passing data from the user interface to Python. 
 <img src="static/images/ui_to_python.jpg">
 
 
 # Step Four: Passing Data from Python to the User Interface
 Obviously, just passing data from the UI to Python makes for a pretty boring web app. We want to be able to update the UI as the simulation is running so that the user can see the impact of their actions.
 ## Updating Text
-This is the easiest one to do, so we'll start here. Use this method when you want to update some text on the UI: maybe the current flow of something, the percentage of the simulation that's complete, or the current status of a slider bar. 
+This is the easiest one to do, so we'll start here. Use this method when you want to update some text on the UI: maybe the current flow of a link, the percentage of the simulation that's complete, or the current status of a slider bar. 
 <h5 a><strong><code>templates/index.html</code></strong></h5>
 
 ```html
@@ -243,7 +244,7 @@ socket.on('storage_update', function(depth) {
 });
 ```
 ## Updating the Map
-This is where Mapbox gets involved. Note that Mapbox's setFeatureState supports more than just color! See <a href='https://docs.mapbox.com/mapbox-gl-js/api/map/#map#setfeaturestate'>here</a> for more info 
+This is where Mapbox gets involved. Note that Mapbox's setFeatureState supports more than just color! See <a href='https://docs.mapbox.com/mapbox-gl-js/api/map/#map#setfeaturestate'>here</a> for more info. There are lots of options here to use this architecture in a totally different way. 
 ```html
 <div id="map"></div>
 ```
@@ -340,9 +341,4 @@ Ariel Roy - royar@umich.edu
 [license-url]: https://github.com/github_username/repo_name/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/ariel-roy/
-[product-screenshot]: images/screenshot.png
-[JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
-[JQuery-url]: https://jquery.com 
-[Flask.com]: https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white
-[Flask-url]: https://flask.palletsprojects.com/en/2.2.x/
 
