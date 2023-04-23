@@ -340,9 +340,6 @@ Here's a visual of what the basic architecture looks like going from Python to t
 (venv) $ python3 app.py
 ```
 
-## Step Six: Iterate!
-Make things look different by modifying the 'style.css' file. Change the map colors in JavaScript. Configure the plot to show something other than depth. Use a totally different SWMM model! The options are endless. 
-
 ## Note
 This is not an exhaustive tutorial and is only meant to illustrate the general principals involved in creating an interactive SWMM web app. For more details, dig into the example files provided in this repository. 
 
@@ -350,9 +347,9 @@ This is not an exhaustive tutorial and is only meant to illustrate the general p
 
 
 
-<!-- USAGE EXAMPLES -->
+<!-- IDEAS -->
 ## Ideas
-
+This architecture is flexible and adaptable - you could use it to do all kinds of things. 
 * Dynamic visualizations
 
 
@@ -382,9 +379,9 @@ Ariel Roy - royar@umich.edu
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-* [Jacquelyn Schmidt]()
-* [Curt Wolf]()
-* [Branko Kerkez]()
+* [Jacquelyn Schmidt](jqs@umich.edu)
+* [Curt Wolf](curtwolf@umich.edu)
+* [Branko Kerkez](bkerkez@umich.edu)
 * [The Great Lakes Water Authority]()
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
