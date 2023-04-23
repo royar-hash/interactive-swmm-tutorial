@@ -83,8 +83,10 @@ Normally, running a SWMM simulation is pretty boring. You set a control strategy
 
 This flexible, adaptable web app architecture combines the modeling power of SWMM with the interactivity and real-time visualization of actual stormwater systems! Think of it as a game-like simulation, kind of like Rollercoaster Tycoon, except I didn't write it in assembly and for sewers. Sewer Tycoon&trade;. 
 
-This project is a product of Professor Branko Kerkez's <a href='http://www-personal.umich.edu/~bkerkez/'>Digital Water Lab</a> at the University of Michigan. 
-<img src="static/images/example_app.jpg" alt="App" align="center">
+This project is a product of Professor Branko Kerkez's <a href='http://www-personal.umich.edu/~bkerkez/'>Digital Water Lab</a> at the University of Michigan. <br>
+
+Here's what the example app looks like.
+<img src="static/images/example_app.jpg" alt="App" height="400">
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
