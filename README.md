@@ -178,7 +178,7 @@ The list of packages above is just a start. You may need to install other packag
 │   ├── app.py
 ```
 
-# Step Three: Passing Data from the User Interface to Python
+# Step Three: Passing Data from the UI to Python
 For our example app, we have a start button and two sliders on the user interface: one for each orifice in the SWMM model. Our goal is to achieve the following: 
 * When the start button is pressed, the PySWMM simulation starts to run
 * When the user changes the slider, the new value of the slider is set as the target setting of the corresponding controllable asset. For example, if the user moves the gate 1 slider all the way down to 0, we want to set the target setting of ORI-11 in the SWMM model to 0 as well. 
@@ -235,8 +235,8 @@ Here's a visual of what the basic architecture looks like for passing data from 
 <img src="static/images/ui_to_python_updated.jpg">
 
 
-# Step Four: Passing Data from Python to the User Interface
-Obviously, just passing data from the UI to Python makes for a pretty boring web app. We want to be able to update the UI as the simulation is running so that the user can see the impact of their actions.
+# Step Four: Passing Data from Python to theUI
+Obviously, just passing data from the user interface to Python makes for a pretty boring web app. We want to be able to update the UI as the simulation is running so that the user can see the impact of their actions.
 ## Updating Text
 This is the easiest one to do, so we'll start here. Use this method when you want to update some text on the UI: maybe the current flow of a link, the percentage of the simulation that's complete, or the current status of a slider bar. 
 <h5 a><strong><code>templates/index.html</code></strong></h5>
