@@ -124,7 +124,7 @@ Here's what the example app looks like. Click <a href='https://interactive-swmm.
 ]
 }
 ```
-4. If you don't have a free Mapbox account, now is the time to make one! Click <a href='https://account.mapbox.com/auth/signup/'>here</a> for instructions on creating your account. Once you've made your free account, click on 'Create a token' on your dashboard and make a secret token with tilesets:write, tilesets:read, and tilesets:list permissions. Make sure to save your secret token somewhere you won't lose it! You'll need it in the next step.
+4. If you don't have a free Mapbox account, now is the time to make one! Click <a href='https://account.mapbox.com/auth/signup/'>here</a> to create your account. Once you've made your account, click on 'Create a token' on your dashboard and make a secret token with tilesets:write, tilesets:read, and tilesets:list permissions. Make sure to save your secret token somewhere you won't lose it! You'll need it in the next step.
 
 5. Take your GeoJSON file or files and upload to Mapbox as tilesets using the <a href="https://docs.mapbox.com/help/tutorials/get-started-mts-and-tilesets-cli/">Mapbox Tilesets CLI</a>. You have to use the method linked; just uploading stuff in Mapbox Studio won't work for our purposes. Here's an example recipe used to upload the example GeoJSON.
 
@@ -183,10 +183,27 @@ For our example app, we have a start button and two sliders on the user interfac
 * When the start button is pressed, the PySWMM simulation starts to run
 * When the user changes the slider, the new value of the slider is set as the target setting of the corresponding controllable asset. For example, if the user moves the gate 1 slider all the way down to 0, we want to set the target setting of ORI-11 in the SWMM model to 0 as well. 
 
+## Start Button
 The basic idea for the start button is as follows:
 * Create a button in HTML. 
 * Write a socket.emit() function that is triggered when the button is pressed. 
 * Write a corresponding socket.on() function in Python that contains your PySWMM loop. 
+Here's what the code snippets for the start button look like.
+
+<h5 a><strong><code>templates/index.html</code></strong></h5>
+
+```html
+```
+<h5 a><strong><code>app.py</code></strong></h5>
+
+```python
+```
+
+<h5 a><strong><code>static/script.js</code></strong></h5>
+
+```javascript
+```
+## Controllable Asset
 
 The basic idea for a controllable asset is this: 
 * Write a socket.emit() function that throws out the data that you want on the backend. For example, for the sliders, you want a function that throws out the new value every time the user changes the position of the slider. 
@@ -194,6 +211,21 @@ The basic idea for a controllable asset is this:
 
 Note that you could adapt this to pass anything from the user interface back to Python; the same principle will work if you have an off/on switch on the UI that you want to turn a pump on or off in PySWMM, for example. 
 
+Here's what the code snippets for a controllable asset look like. 
+
+<h5 a><strong><code>templates/index.html</code></strong></h5>
+
+```html
+```
+<h5 a><strong><code>app.py</code></strong></h5>
+
+```python
+```
+
+<h5 a><strong><code>static/script.js</code></strong></h5>
+
+```javascript
+```
 Here's a visual of what the basic architecture looks like for passing data from the user interface to Python. 
 <img src="static/images/ui_to_python.jpg">
 
