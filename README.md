@@ -28,7 +28,7 @@
     <img src="static/images/lab_logo.png" alt="Logo" height="200">
   </a>
 
-<h3 align="center">How to build an interactive pyswmm web app</h3>
+<h3 align="center">building an interactive pyswmm web app</h3>
 
   <p align="center">
     <br />
