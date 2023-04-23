@@ -74,7 +74,7 @@
 
 
 <!-- ABOUT THE PROJECT -->
-## About The Project
+# About The Project
 This tutorial will walk you through the basic architecture of building an interactive SWMM web app using Flask-SocketIO and Mapbox GL JS.
 
 Click <a href='https://interactive-swmm.herokuapp.com/'>here</a> to see a slightly more sophisticated version of the example app used throughout this tutorial. 
@@ -87,7 +87,7 @@ This project is a product of Professor Branko Kerkez's <a href='http://www-perso
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Built With
+## Built With
 * Mapbox GL JS
 * Flask-SocketIO
 * PySWMM
