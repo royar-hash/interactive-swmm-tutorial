@@ -55,18 +55,18 @@
         <li><a href="#built-with">Built With</a></li>
       </ul>
     </li>
-    <li><a href="#Step One: Preparing Your Geospatial Data">Step One: Preparing Your Geospatial Data</a></li>
-    <li><a href="#usage">Step Two: Set up Your App</a></li>
-    <li><a href="#roadmap">Step Three: Passing Data from the UI to Python</a></li>
-    <li><a href="#contributing">Step Four: Passing Data from Python to the UI</a></li>
+    <li><a href="#step-one">Step One: Preparing Your Geospatial Data</a></li>
+    <li><a href="#step-two">Step Two: Set up Your App</a></li>
+    <li><a href="#step-three">Step Three: Passing Data from the UI to Python</a></li>
+    <li><a href="#step-four">Step Four: Passing Data from Python to the UI</a></li>
           <ul>
-              <li><a href="#built-with">Update Text</a></li>
-              <li><a href="#built-with">Update a Chart</a></li>
-              <li><a href="#built-with">Update a Map</a></li>
+              <li><a href="#update-text">Update Text</a></li>
+              <li><a href="#update-chart">Update a Chart</a></li>
+              <li><a href="#update-map">Update a Map</a></li>
           </ul> 
-    <li><a href="#license">Step Five: Run Your App</a></li>
-    <li><a href="#license">Step Six: Iterate!</a></li>
-    <li><a href="#license">Ideas</a></li>
+    <li><a href="#step-five">Step Five: Run Your App</a></li>
+    <li><a href="#ideas">Ideas</a></li>
+    <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
