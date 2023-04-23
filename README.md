@@ -192,16 +192,19 @@ Here's what the code snippets for the start button look like.
 
 <h5 a><strong><code>templates/index.html</code></strong></h5>
 
+<h5 a><strong><code>templates/index.html</code></strong></h5>
+
 ```html
 ```
-<h5 a><strong><code>app.py</code></strong></h5>
-
-```python
-```
-
+  
 <h5 a><strong><code>static/script.js</code></strong></h5>
 
 ```javascript
+```
+  
+<h5 a><strong><code>app.py</code></strong></h5>
+
+```python
 ```
 ## Controllable Asset
 
@@ -217,15 +220,17 @@ Here's what the code snippets for a controllable asset look like.
 
 ```html
 ```
-<h5 a><strong><code>app.py</code></strong></h5>
-
-```python
-```
-
+  
 <h5 a><strong><code>static/script.js</code></strong></h5>
 
 ```javascript
 ```
+  
+<h5 a><strong><code>app.py</code></strong></h5>
+
+```python
+```
+  
 Here's a visual of what the basic architecture looks like for passing data from the user interface to Python. 
 <img src="static/images/ui_to_python.jpg">
 
