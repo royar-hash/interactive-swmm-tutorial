@@ -332,6 +332,9 @@ socket.on('flow_update', function(flow_json) {
 });
 ```
 
+Here's a visual of what the basic architecture looks like going from Python to the UI. 
+<img src="static/images/python_to_ui.jpg">
+
 ## Step Five: Run Your App
 ```bash
 (venv) $ python3 app.py
