@@ -28,7 +28,7 @@
     <img src="static/images/lab_logo.png" alt="Logo" height="200">
   </a>
 
-<h3 align="center">How to build an interactive SWMM web app</h3>
+<h3 align="center">How to build an interactive pyswmm web app</h3>
 
   <p align="center">
     <br />
@@ -90,7 +90,7 @@ This project is a product of Professor Branko Kerkez's <a href='http://www-perso
 ## Built With
 * Mapbox GL JS
 * Flask-SocketIO
-* PySWMM
+* pyswmm
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
