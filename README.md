@@ -55,7 +55,7 @@
         <li><a href="#built-with">Built With</a></li>
       </ul>
     </li>
-    <li><a href="#getting-started">Step One: Preparing Your Geospatial Data</a></li>
+    <li><a href="#Step One: Preparing Your Geospatial Data">Step One: Preparing Your Geospatial Data</a></li>
     <li><a href="#usage">Step Two: Set up Your App</a></li>
     <li><a href="#roadmap">Step Three: Passing Data from the UI to Python</a></li>
     <li><a href="#contributing">Step Four: Passing Data from Python to the UI</a></li>
