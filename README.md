@@ -79,7 +79,9 @@ This tutorial will walk you through the basic architecture of building an intera
 
 Normally, running a SWMM simulation is pretty boring. You set a control strategy, hit start, and then you pretty much can't see or do anything until the simulation is done running. 
 
-This flexible, adaptable web app architecture combines the modeling power of SWMM with the interactivity and real-time visualization of actual stormwater systems! Think of it as a game-like simulation, kind of like Rollercoaster Tycoon, except I didn't write it in assembly and for sewers. Sewer Tycoon&trade;. You can change the status of controllable assets <i>as the simulation is running</i> and immediately visualize the effects of your actions.
+This flexible, adaptable web app architecture combines the modeling power of SWMM with the interactivity and real-time visualization of actual stormwater systems! Think of it as a game-like simulation, kind of like Rollercoaster Tycoon, except I didn't write it in assembly and for sewers. Sewer Tycoon&trade;. 
+
+You can change the status of controllable assets <i>as the simulation is running</i> and immediately visualize the effects of your actions. Unlike running a typical SWMM simulation, you aren't locked into a control strategy from the start and you can see exactly what's going on inside the model. 
 
 This project is a product of Professor Branko Kerkez's <a href='http://www-personal.umich.edu/~bkerkez/'>Digital Water Lab</a> at the University of Michigan. <br>
 
