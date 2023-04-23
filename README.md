@@ -77,15 +77,13 @@
 # About The Project
 This tutorial will walk you through the basic architecture of building an interactive SWMM web app using Flask-SocketIO and Mapbox GL JS.
 
-Click <a href='https://interactive-swmm.herokuapp.com/'>here</a> to see a finished version of the example app used throughout this tutorial. 
-
 Normally, running a SWMM simulation is pretty boring. You set a control strategy, hit start, and then you pretty much can't see or do anything until the simulation is done running. 
 
 This flexible, adaptable web app architecture combines the modeling power of SWMM with the interactivity and real-time visualization of actual stormwater systems! Think of it as a game-like simulation, kind of like Rollercoaster Tycoon, except I didn't write it in assembly and for sewers. Sewer Tycoon&trade;. 
 
 This project is a product of Professor Branko Kerkez's <a href='http://www-personal.umich.edu/~bkerkez/'>Digital Water Lab</a> at the University of Michigan. <br>
 
-Here's what the example app looks like. <br>
+Here's what the example app looks like. Click <a href='https://interactive-swmm.herokuapp.com/'>here</a> to see and interact with the finished product.<br>
 <img src="static/images/example_app.jpg" alt="App" height="400">
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
