@@ -103,7 +103,7 @@ Here's what the example app looks like. Click <a href='https://interactive-swmm.
 <!-- GETTING STARTED -->
 # Step One: Preparing Your Geospatial Data
 
-1. Pick your SWMM model! For this tutorial, we're going to use this simple model with two orifices, a storage node, two conduits, and two outfalls. Here's what our sample model looks like in PCSWMM. If you want to download the model yourself and take a look, it can be found in this repository at 'models/model.inp'. <br>
+1. Pick your SWMM model! For this tutorial, we're going to use this simple model with two orifices, a storage node, two conduits, and two outfalls. Here's what our sample model looks like in PCSWMM. If you want to download the model yourself and take a look, it can be found in this repository at <code>model/model.inp</code>. <br>
 <img src="static/images/swmm_model.jpg"  height="300">
 
 2. Decide what assets from your SWMM model you want to be able to dynamically visualize (the things you want to change color or size as the simulation is running). In this case, we want to be able to see the flow in the four links. The link names and IDs are shown below.<br>
