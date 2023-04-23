@@ -25,7 +25,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/royar-hash/interactive-swmm-tutorial">
-    <img src="static/images/DWL.png" alt="Logo" width="80" height="80">
+    <img src="static/images/RTWSL_icon_yellowbackground.png" alt="Logo">
   </a>
 
 <h3 align="center">How to build an interactive SWMM web app</h3>
