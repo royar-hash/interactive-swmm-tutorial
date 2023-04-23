@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>interactive stormwater simulation</title>
+    <link rel="icon" href="./static/images/DWL.png">
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+    <link href='static/style.css' rel='stylesheet'>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.6.1/socket.io.js" integrity="sha512-xbQU0+iHqhVt7VIXi6vBJKPh3IQBF5B84sSHdjKiSccyX/1ZI7Vnkt2/8y8uruj63/DVmCxfUNohPNruthTEQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <p id="header_text">interactive stormwater simulation</p>
+        </div>
+        <div id="map"></div>
+        
+        <div id='colorbar_container'>
+            <div id='flow'><p>Flow: 0 m<sup>3</sup>/s</p></div>
+            <div id="colorbar"></div>
+            <div id='flow-2'><p>0.2 m<sup>3</sup>/s</p></div>
+        </div>
+        <form id="start" method="POST" action="#">
+            <input id="start_button" class="button" type="submit" value="start sim"><p class="tracker">&nbsp;complete:&nbsp;</p><div class='tracker' id="sim_percent_tracker"></div><br>
+        </form>    
+        <div id="gate_1_container">
+            <p class="inline" id='gate_1'>gate 1</p>
+            <input type="range" min="0" max="100" value="0" class="slider" id="gate_1_slider">
+            <div class='tracker' id="gate_1_slider_tracker"></div><br>
+            <p class="tracker" id='outfall_1'>flow at outfall 1:</p><div class='tracker' id="outfall_1_tracker"></div><br>
+        </div>
+        <div id='gate_2_container'>
+            <p class="inline" id='gate_2'>gate 2</p>
+            <input type="range" min="0" max="100" value="0" class="slider" id="gate_2_slider">
+            <div class='tracker' id="gate_2_slider_tracker"></div><br>
+            <p class='tracker' id='outfall_2'>flow at outfall 2:</p><div class='tracker' id="outfall_2_tracker"></div>
+        </div>
+        <canvas id="chart"></canvas>
+        <div id='legend'>
+            <p id='baseline' class='inline'>Baseline</p>
+            <p id='current' class='inline'>Current</p>
+        </div>
+    </div>
+    <script src="static/script.js"></script> <!-- needs to be after the map div! -->
+</body>
+
+</html>
