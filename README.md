@@ -193,19 +193,29 @@ Here's what the code snippets for the start button look like.
 
 <h5 a><strong><code>templates/index.html</code></strong></h5>
 
-<h5 a><strong><code>templates/index.html</code></strong></h5>
-
 ```html
+<form id="start" method="POST" action="#">
+  <input id="start_button" class="button" type="submit" value="start sim">
+</form>  
 ```
   
 <h5 a><strong><code>static/script.js</code></strong></h5>
 
 ```javascript
+$('form#start').submit(function(event) {
+    socket.emit('start_button', {data: 'pressed'});
+    return false;
+});
 ```
   
 <h5 a><strong><code>app.py</code></strong></h5>
 
 ```python
+@socketio.on('start_button')
+def handle_message(data):
+  with Simulation('./model/model.inp') as sim:
+    for step in sim:
+      # do stuff
 ```
 ## Controllable Asset
 
@@ -220,16 +230,29 @@ Here's what the code snippets for a controllable asset look like.
 <h5 a><strong><code>templates/index.html</code></strong></h5>
 
 ```html
+<input type="range" min="0" max="100" value="0" class="slider" id="gate_1_slider">
 ```
   
 <h5 a><strong><code>static/script.js</code></strong></h5>
 
 ```javascript
+$('input#gate_1_slider').on('input', function(event) {
+    socket.emit('gate_1_change', {
+        who:$(this).attr('id'),  
+        data: $(this).val()
+        });
+        return false;
+    });
 ```
   
 <h5 a><strong><code>app.py</code></strong></h5>
 
 ```python
+@socketio.on('gate_1_change')
+def handle_slider(data):
+    json_object = json.dumps(data)
+    with open('gate_1.json', 'w') as outfile:
+        outfile.write(json_object) 
 ```
   
 Here's a visual of what the basic architecture looks like for passing data from the user interface to Python. 
